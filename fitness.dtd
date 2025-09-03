@@ -1,0 +1,33 @@
+<!-- Root: one user profile and their workouts -->
+<!ELEMENT fitness (user, workouts)>
+<!ATTLIST fitness
+  app CDATA #IMPLIED
+  version CDATA #IMPLIED>
+
+<!ELEMENT user (name, age?, height?, weight?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+
+<!ELEMENT workouts (workout+)>
+
+<!ELEMENT workout (title, date, duration, distance?, calories?, metrics?, notes?)>
+<!ATTLIST workout
+  id ID #REQUIRED
+  kind (run|walk|cycle|strength|yoga|swim) #REQUIRED
+  intensity (low|moderate|high) "moderate"
+  location (indoor|outdoor) #IMPLIED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT distance (#PCDATA)>
+<!ELEMENT calories (#PCDATA)>
+
+<!ELEMENT metrics (avg_hr?, max_hr?, steps?)>
+<!ELEMENT avg_hr (#PCDATA)>
+<!ELEMENT max_hr (#PCDATA)>
+<!ELEMENT steps (#PCDATA)>
+
+<!ELEMENT notes (#PCDATA)>

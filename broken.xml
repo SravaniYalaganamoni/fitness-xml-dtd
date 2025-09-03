@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fitness SYSTEM "fitness.dtd">
+<fitness app="FitTrack" version="1.0">
+  <user>
+    <name>Sree Shravs</name>
+  </user>
+
+  <workouts>
+    <workout kind="rowing" intensity="extreme" location="indoor">
+      <title>Erg Session</title>
+      <date>2025-09-04</date>
+      <distance>5.0</distance>
+      <duration>25</duration>
+    </workout>
+  </workouts>
+</fitness>

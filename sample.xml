@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fitness SYSTEM "fitness.dtd">
+<fitness app="FitTrack" version="1.0">
+  <user>
+    <name>Sree Shravs</name>
+    <age>25</age>
+    <height>172</height>
+    <weight>68</weight>
+  </user>
+
+  <workouts>
+    <workout id="W1" kind="run" intensity="high" location="outdoor">
+      <title>Morning Tempo Run</title>
+      <date>2025-09-02</date>
+      <duration>42</duration>
+      <distance>8.2</distance>
+      <calories>560</calories>
+      <metrics>
+        <avg_hr>158</avg_hr>
+        <max_hr>176</max_hr>
+        <steps>7200</steps>
+      </metrics>
+      <notes>Felt strong; last 10 minutes at tempo pace.</notes>
+    </workout>
+
+    <workout id="W2" kind="strength" intensity="moderate" location="indoor">
+      <title>Upper Body Circuit</title>
+      <date>2025-09-03</date>
+      <duration>55</duration>
+      <calories>380</calories>
+      <notes>3 sets × 10 reps: bench, rows, shoulder press, curls.</notes>
+    </workout>
+  </workouts>
+</fitness>
